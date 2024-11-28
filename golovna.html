@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - EasyExchange</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('fon.jpg'); /* Шлях до фону */
+            background-size: cover; /* Зображення покриває всю сторінку */
+            background-repeat: no-repeat; /* Не повторювати фон */
+            background-position: center; /* Центрувати фон */
+            background-attachment: fixed; /* Фон не прокручується */
+        }
+    </style>
+</head>
+<body>
+    <!-- Хедер сайту -->
+    <div class="header">
+        <h1 class="logo">EasyExchange</h1>
+        <div class="burger-menu" id="burger-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        <nav>
+            <a href="index.html">Конвертер</a>
+            <a href="magazine.html">Чорний ринок</a>
+            <a href="golovna.html" class="active">Про нас</a>
+        </nav>
+    </div>
+
+    <!-- Мобільне меню -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Конвертер</a>
+        <a href="magazine.html">Чорний ринок</a>
+        <a href="golovna.html" class="active">Про нас</a>
+    </div>
+
+    <!-- Про нас -->
+    <div class="about">
+        <h2>Про EasyExchange</h2>
+        <!-- Відеоблок -->
+    <div class="video-section">
+        <video autoplay loop muted playsinline>
+            <source src="videobackground.mp4" type="video/mp4">
+        </video>
+    </div>
+        <p>EasyExchange — це зручний інструмент для швидкої та простої конвертації валют за актуальними курсами. Ми прагнемо забезпечити наших користувачів надійною і точною інформацією про валютні курси, щоб допомогти вам зробити вигідні фінансові операції.</p>
+
+        <p>Наш сервіс надає вам можливість швидко дізнаватися про курси валют у банках та отримувати найсвіжішу інформацію. Всі дані оновлюються в реальному часі, щоб ви могли здійснювати обмін валют без жодних проблем.</p>
+
+        <h3>Наші Переваги</h3>
+        <ul>
+            <li><strong>Актуальні дані:</strong> Ми постійно оновлюємо інформацію, щоб ви завжди мали доступ до найточніших курсів валют.</li>
+            <li><strong>Зручність:</strong> Інтерфейс нашого сайту зрозумілий і простий у використанні, щоб ви могли легко конвертувати валюти.</li>
+            <li><strong>Швидкість:</strong> Конвертуйте валюти за кілька кліків без жодних затримок.</li>
+            <li><strong>Безпечність:</strong> Всі транзакції та обміни інформацією відбуваються через захищені канали, що гарантує вашу безпеку.</li>
+        </ul>
+
+        <h3>Цікаві Факти про Валюти</h3>
+        <p>Що ми знаємо про валютні обміни? Ось кілька цікавих фактів:</p>
+        <ul>
+            <li><strong>Долар США (USD):</strong> Це одна з найбільш використовуваних валют у світі. Більше 60% міжнародних резервів складаються саме з доларів США.</li>
+            <li><strong>Євро (EUR):</strong> Євро є офіційною валютою 20 країн Європейського Союзу і є другою за популярністю у світі після долара США.</li>
+            <li><strong>Біткойн (BTC):</strong> Хоча біткойн не є офіційною валютою, він активно використовується для фінансових операцій у криптовалютному світі.</li>
+        </ul>
+
+        <p><i>"Зробити обмін валют простим і доступним — наше головне завдання."</i></p>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 EasyExchange. Усі права захищено.</p>
+            <p>Розроблено з любов'ю для простоти обміну валют.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Логіка для відкриття/закриття бургер-меню
+        const burgerMenu = document.getElementById('burger-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        burgerMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

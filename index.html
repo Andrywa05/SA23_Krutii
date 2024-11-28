@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер - EasyExchange</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('fon.jpg'); /* Шлях до фону */
+            background-size: cover; /* Зображення покриває всю сторінку */
+            background-repeat: no-repeat; /* Не повторювати фон */
+            background-position: center; /* Центрувати фон */
+            background-attachment: fixed; /* Фон не прокручується */
+        }
+    </style>
+</head>
+<body>
+    <!-- Хедер сайту -->
+    <div class="header">
+        <h1 class="logo">EasyExchange</h1>
+        <nav>
+            <a href="index.html" class="active">Конвертер</a>
+            <a href="magazine.html">Чорний ринок</a>
+            <a href="golovna.html">Про нас</a>
+        </nav>
+
+        <!-- Бургер-меню -->
+        <div class="burger-menu" id="burgerMenu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+    </div>
+
+    <!-- Мобільне випадаюче меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="active">Конвертер</a>
+        <a href="magazine.html">Чорний ринок</a>
+        <a href="golovna.html">Про нас</a>
+    </div>
+
+    <!-- Конвертер валют -->
+    <div class="converter">
+        <h2>Конвертер валют</h2>
+        <p>Джерело: за середнім банківським курсом</p>
+        <div class="conversion-box">
+            <div class="input-box">
+                <p>У мене є</p>
+                <input type="number" value="100">
+                <div class="currency">
+                    <img src="usa-flag.png" alt="USD">
+                    <span>USD</span>
+                </div>
+                <p>1 USD = 41.2 UAH</p>
+            </div>
+            <div class="arrow">⇄</div>
+            <div class="output-box">
+                <p>Я отримаю</p>
+                <div class="result">4120</div>
+                <div class="currency">
+                    <img src="ukraine-flag.png" alt="UAH">
+                    <span>UAH</span>
+                </div>
+                <p>1 UAH = 0.0243 USD</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Таблиця курсів валют -->
+    <div class="rates">
+        <h2>Середній курс валют у банках</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Валюта</th>
+                    <th>Купівля</th>
+                    <th>Продаж</th>
+                    <th>НБУ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>USD</td>
+                    <td>40.9732</td>
+                    <td>41.5948</td>
+                    <td>41.3798</td>
+                </tr>
+                <tr>
+                    <td>EUR</td>
+                    <td>44.5150</td>
+                    <td>45.1612</td>
+                    <td>44.6074</td>
+                </tr>
+                <tr>
+                    <td>PLN</td>
+                    <td>9.0000</td>
+                    <td>11.0000</td>
+                    <td>10.2603</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Блок з цінами на послуги/товари -->
+    <div class="price-list">
+        <h2>Наші послуги</h2>
+        <div class="price-items">
+            <div class="price-item">
+                <h3>Консультація</h3>
+                <p>Детальний аналіз та консультація</p>
+                <span>500 грн</span>
+            </div>
+            <div class="price-item">
+                <h3>Обмін валюти</h3>
+                <p>Швидкий обмін з вигідним курсом</p>
+                <span>Комісія 1%</span>
+            </div>
+            <div class="price-item">
+                <h3>Переказ коштів</h3>
+                <p>Міжнародні грошові перекази</p>
+                <span>Від 100 грн</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Перемикаємо бургер-меню
+        const burgerMenu = document.getElementById('burgerMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        burgerMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
